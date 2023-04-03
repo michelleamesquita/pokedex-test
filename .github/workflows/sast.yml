@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v2 
 
       - name: SAST validator
-        uses: michelleamesquita/sast-validator@v40
+        uses: michelleamesquita/sast-validator@v44
         with:
           options: -v $PWD/:/app
           path: .
