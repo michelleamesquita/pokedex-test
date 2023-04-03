@@ -16,4 +16,4 @@ jobs:
         with:
           options: -v $PWD/:/app
           path: .
-          language: node
+          language: .
