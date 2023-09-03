@@ -5,8 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     name: Horusec Scan
     steps:
-      - name: Run Horusec
-        id: run_horusec
-        uses: fike/horusec-action@v0.1
-        with:
-          arguments: -p="./" 
+    - name: Check out code
+      uses: actions/checkout@v2
+    - name: Run Horusec
+      id: run_horusec
+      uses: fike/horusec-action@v0.1
+      with:
+        arguments: -p="./" 
