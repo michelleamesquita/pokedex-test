@@ -11,4 +11,4 @@ jobs:
       id: run_horusec
       uses: fike/horusec-action@v0.2.2
       with:
-        arguments: " -p ./ -e=false" 
+        arguments: "-p ./ -e=false" 
